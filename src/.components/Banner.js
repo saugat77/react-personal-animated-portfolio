@@ -5,7 +5,7 @@ import headerImg from "../assets/img/header-img.svg";
 export const Banner = () =>{
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Laravel Developer", "React Developer"];
+    const toRotate = ["Web Developer", "Backend Developer", "Student"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300- Math.random() * 100);
     const period = 2000;
@@ -43,7 +43,7 @@ export const Banner = () =>{
                         <span className="tagline">
                             Welcome to my Portfolio
                         </span>
-                        <h1>{'Hi I am Saugat'} <br /><span className = "wrap"> {text}</span> </h1>
+                        <h1>{'Hi, It`s me Saugat,'} <br /><span className = "wrap"> A {text}</span> </h1>
                         <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries  </p>
                         <button onClick={() => console.log('connect')}>Lets Connect <ArrowRightCircle size = {25}></ArrowRightCircle> </button>
                     </Col>
