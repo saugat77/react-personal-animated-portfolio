@@ -17,6 +17,7 @@ export const Projects = () => {
       title: "GBHO",
       description: "Design & Developed For a US based Company With Payment System and Membership Registration Using Laravel",
       imgUrl: projImg2,
+      content:"",
     },
     {
       title: "Business Startup",
@@ -41,7 +42,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
