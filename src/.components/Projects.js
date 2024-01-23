@@ -1,46 +1,70 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/ecommerce.jpg";
-import projImg2 from "../assets/img/gbho.png";
-import projImg3 from "../assets/img/kantipur.png";
+import ecomerceImg1 from "../assets/img/ecommerce/ecommerce.jpg";
+import ecomerveImg2 from "../assets/img/ecommerce/2.png";
+import ecomerveImg3 from "../assets/img/ecommerce/3.png";
+import projImg1 from "../assets/img/gbho.png";
+import projImg2 from "../assets/img/gbho/2.png";
+import projImg3 from "../assets/img/gbho/3.png";
+import kat1 from "../assets/img/kantipur.png";
+import kat2 from "../assets/img/kantipur/3.png";
+import kat3 from "../assets/img/kantipur/admin.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
-
   const projects = [
     {
-      title: "Ecommerce Website",
-      description: "Design & Developed For Final Year Project Using Laravel",
+      title: "GBHO Landing Page",
+      description: "Landing Page",
       imgUrl: projImg1,
     },
     {
-      title: "GBHO",
-      description: "Design & Developed For a US based Company With Payment System and Membership Registration Using Laravel",
+      title: "Register Page",
+      description: "Membership Regsitered Page",
       imgUrl: projImg2,
-      content:"",
     },
     {
-      title: "Business Startup",
-      description: "Design & Developed For a Nepali Foreign Employment Company which has unique feature i.e. Image Recognization Using Laravel Vue and Tessaract",
+      title: "Admin Dashboard",
+      description: "Dashboard view of admin page",
       imgUrl: projImg3,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
   ];
+  const ecommerce = [
+    {
+      title: "Landing Page",
+      description: "Landing Page",
+      imgUrl: ecomerceImg1,
+    },
+    {
+      title: "Login Page",
+      description: "Login Page",
+      imgUrl: ecomerveImg2,
+    },
+    {
+      title: "Admin Dashboard",
+      description: "Dashboard view of admin page",
+      imgUrl: ecomerveImg3,
+    },
 
+
+  ];
+  const kantipurDescription = [
+    {
+      title: "Kantipur Landing Page",
+      description: "Landing Page",
+      imgUrl: kat1,
+    },
+    {
+      title: "Resume Builder",
+      description: "Used Tessaract to take the text from image",
+      imgUrl: kat2,
+    },
+    {
+      title: "Admin Dashboard",
+      description: "Dashboard view of admin page",
+      imgUrl: kat3,
+    },
+  ];
   return (
     <section className="project" id="projects">
       <Container>
@@ -51,20 +75,40 @@ export const Projects = () => {
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Images</Nav.Link>
+                  <Nav.Link eventKey="first">Ecommerce Web application</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Ecommerce Web application</Nav.Link>
+                  <Nav.Link eventKey="second">GBHO</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">GBHO</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="fourth">Kantipur Overseas</Nav.Link>
+                  <Nav.Link eventKey="third">Kantipur Overseas</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
+                  <Row>
+                    {
+                      ecommerce.map((project, index) => {
+                        return (
+                          <ProjectCard
+                            key={index}
+                            {...project}
+                          />
+                        )
+                      })
+                    }
+                  </Row>
+                  <p>
+                    <b>Ecommerce Website:</b>
+                    In my final year project, I developed a complete ecommerce website using Laravel for the backend. The platform caters to two
+                    main user roles: sellers, who upload products and manage categories and users, and customers, who browse, add items to their
+                    cart, and can create wishlists. The website follows the typical ecommerce workflow: users can register/login, add items to their
+                    cart, and proceed to checkout. Payment options include cash on delivery or using PayPal or Khalti. It was a solo project aimed at
+                    showcasing a Business-to-Customer (B2C) ecommerce model. <br />
+
+                  </p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
                   <Row>
                     {
                       projects.map((project, index) => {
@@ -77,19 +121,6 @@ export const Projects = () => {
                       })
                     }
                   </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                  <p>
-                    <b>Ecommerce Website:</b>
-                    In my final year project, I developed a complete ecommerce website using Laravel for the backend. The platform caters to two
-                    main user roles: sellers, who upload products and manage categories and users, and customers, who browse, add items to their
-                    cart, and can create wishlists. The website follows the typical ecommerce workflow: users can register/login, add items to their
-                    cart, and proceed to checkout. Payment options include cash on delivery or using PayPal or Khalti. It was a solo project aimed at
-                    showcasing a Business-to-Customer (B2C) ecommerce model. <br />
-
-                  </p>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
                   <p>  <b>GBHO Project:</b>
                     At FestNepal, I actively contributed to a multifaceted project aimed at creating a web platform for booking priests, managing
                     events, running an ecommerce website, and overseeing a school management system. This US-based project was initiated by a
@@ -108,8 +139,21 @@ export const Projects = () => {
                     management for both live and test servers. This experience provided insights into deployment processes and the functioning of
                     an IT company. Though the journey ended after a year, it was an enriching period where I acquired practical skills and insights
                     into various aspects of web development and IT operations. <br /></p>
+
                 </Tab.Pane>
-                <Tab.Pane eventKey="fourth">
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    {
+                      kantipurDescription.map((project, index) => {
+                        return (
+                          <ProjectCard
+                            key={index}
+                            {...project}
+                          />
+                        )
+                      })
+                    }
+                  </Row>
                   <p>
                     <b>Kantipur Overseas Website:</b>
                     Kantipur Overseas is the one of the oldest agency serving about 25 years in the foreign employment sector. Working on Kantipur
@@ -119,8 +163,7 @@ export const Projects = () => {
                     director appointment scheduling, and a specialized resume builder that uses government-issued police report images.
                     My enthusiasm for technology and ability to adapt are evident, showcased by my leadership experience at FestNepal. I'm a quick
                     learner and a team player, qualities that significantly contribute to project success. If there are new opportunities available, my
-                    skill set and eagerness to grow could be valuable assets to any team. I'm committed to embracing and conquering the exciting
-                    challenges in the tech world!
+                    skill set and eagerness to grow could be valuable assets to any team. 
                   </p>
                 </Tab.Pane>
               </Tab.Content>
