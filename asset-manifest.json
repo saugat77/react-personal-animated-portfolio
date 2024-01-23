@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/react-personal-animated-portfolio/static/css/main.c5e73ed9.css",
-    "main.js": "/react-personal-animated-portfolio/static/js/main.41cd562e.js",
+    "main.js": "/react-personal-animated-portfolio/static/js/main.0b53ed66.js",
     "static/js/787.30237536.chunk.js": "/react-personal-animated-portfolio/static/js/787.30237536.chunk.js",
     "static/media/gbho.png": "/react-personal-animated-portfolio/static/media/gbho.30b46d560b0d2ded952f.png",
     "static/media/kantipur.png": "/react-personal-animated-portfolio/static/media/kantipur.7f77f12187aad6226995.png",
     "static/media/color-sharp.png": "/react-personal-animated-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/react-personal-animated-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/3.png": "/react-personal-animated-portfolio/static/media/3.ab83858f38c515141fb7.png",
+    "static/media/2.png": "/react-personal-animated-portfolio/static/media/2.17da61ea5f1e4ed7b088.png",
     "static/media/banner-bg.png": "/react-personal-animated-portfolio/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/react-personal-animated-portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/admin.png": "/react-personal-animated-portfolio/static/media/admin.a7701d3dcc7ba2cb7952.png",
     "static/media/CentraNo2-Bold.ttf": "/react-personal-animated-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/react-personal-animated-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/react-personal-animated-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -27,11 +30,11 @@
     "index.html": "/react-personal-animated-portfolio/index.html",
     "static/media/nav-icon1.svg": "/react-personal-animated-portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.c5e73ed9.css.map": "/react-personal-animated-portfolio/static/css/main.c5e73ed9.css.map",
-    "main.41cd562e.js.map": "/react-personal-animated-portfolio/static/js/main.41cd562e.js.map",
+    "main.0b53ed66.js.map": "/react-personal-animated-portfolio/static/js/main.0b53ed66.js.map",
     "787.30237536.chunk.js.map": "/react-personal-animated-portfolio/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5e73ed9.css",
-    "static/js/main.41cd562e.js"
+    "static/js/main.0b53ed66.js"
   ]
 }
